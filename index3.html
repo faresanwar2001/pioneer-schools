@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student To Apply</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Beginning of the registration form -->
+    <form class="form" action="http://localhost/school/main.php" method="post"  onsubmit=" return validate();">
+        <div id="error"></div>
+            <label class="std" for="">Student Name:</label><br>
+            <input placeholder="Student Name:" type="text" id="name"  name="Name"  required> <br><br> 
+            <label class="std" for="">Gender:</label><br>
+            <input type="radio" id="gender" name="gender" required>Male <br>
+            <input type="radio" id="gender" name="gender" required>Female <br><br>
+            <label class="std" for="">Date Of Birth:</label> <br>
+            <input placeholder="Date Of Birth:" type="date" id="date" name="date" required><br><br>
+            <label class="std" for="">Grade:</label> <br>
+            <input placeholder="Grade" type="text" id="grade" name="grade" required><br><br>
+            <label class="std" for="">Contact Number:</label> <br>
+            <input placeholder="number" type="text" id="number" name="number" required><br><br>
+            <label class="std" for="">E-mail:</label> <br>
+            <input placeholder="E-mail" type="email" id="mail" name="mail" required><br><br>
+            <label class="std" for="">Comment</label><br>
+            <textarea  class="texter1" name="comment" id="comment" cols="30" rows="10" required></textarea><br>
+            <input type="submit" value="submit" class="btn">
+    </form>
+<!-- End of the registration form -->
+
+<!--java script file-->
+<script src="js/main.js"></script>
+</body>
+</html>
